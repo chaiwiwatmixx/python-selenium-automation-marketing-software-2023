@@ -1,0 +1,172 @@
+-v'dbo#check live page---------------------------------------------------------------
+
+//i[@id='MBackNavBarLeftArrow']
+
+#PAGE COMMENT---------------------------------------------------------------
+#TAB COMMENT
+(//a[normalize-space()='Comment'])[]
+
+#textarea
+//textarea[@id='composerInput']
+
+#POST button
+//button[@name='submit']
+
+#PAGE scrping---------------------------------------------------------------
+#url page
+//a[@aria-hidden='true'] (href)
+#name page
+//a[@aria-hidden='true'] (text)
+
+#des
+//span[contains(text(),'$') or contains(text(),'posts in the') or contains(text(),'out of')]
+
+#add to exc
+https://www.youtube.com/watch?v=9ALJlSV3Dzw
+
+#end get data
+//span[contains(text(),'End of results')]
+
+#Group scrping---------------------------------------------------------------
+
+#Public Groups
+//input[@aria-label='Public Groups']
+
+#GROUP POST---------------------------------------------------------------
+
+#post tab
+//div[contains(text(),'Write something...')]
+
+#textarea
+//div[contains(text(),'on your mind')]/following-sibling::textarea
+
+#post button
+(//button[@value='Post'][normalize-space()='Post'])[2]
+
+#JOIN GROUP---------------------------------------------------------------
+//button[normalize-space()='Join Group']
+
+#CheckLive----------------------------------------------------------------
+
+#mobile login
+//button[@name='login']
+
+#feed page
+//span[normalize-space()='News Feed']/following-sibling::div
+
+#icon mobile
+//span[normalize-space()='News Feed']/following-sibling::div
+
+#COMMENT GROUP---------------------------------------------------------------
+#//div//span[contains(text(),'Admins control who posts and comments · Request to')]
+
+#FARM VEIDO------------------------------------------------------------------
+
+#video tab
+(//div[@id='mJewelNav']//parent::div)[15]
+//div[@id='videos_tab_jewel']
+
+#play
+//div[@data-sigil='m-video-play-button playInlineVideo']
+
+#like 
+//a[contains(text(),'Like')]
+
+#share
+//a[contains(text(),'Share')]
+#share now
+//a[@id='share-one-click-button']
+
+#FARM store------------------------------------------------------------------
+#store tab1
+//i[@data-sigil='m-stories-tray-pog-picture']
+
+#store tab2
+//div[@data-testid='story_tray']//div[@data-sigil='m-stories-tray-item-preview']//img
+
+#watch story1
+//div[contains(text(),"Tap to view story")]
+
+#watch story2
+//div[@data-sigil='m-stories-tap-overlay']
+
+#play vido
+//div[@data-sigil='m-video-play-button playInlineVideo']
+#like
+//li[1]
+
+#FARM add friend------------------------------------------------------------------
+
+#tab friend
+//div[@id='requests_jewel']
+
+#friend Confirm bt
+//button[@value="Confirm"]
+
+#friend delete bt
+//button[@value="Delete"]
+
+#FARM post------------------------------------------------------------------
+
+#my profile
+//div[@id='profile_tab_jewel']
+
+#tab post
+//div[contains(text(),'on your mind')]
+
+#textaria
+//div[contains(text(),'on your mind')]/following-sibling::textarea
+
+#post btn
+(//button[@value='Post'][normalize-space()='Post'])[2]
+
+//div[@id='videos_tab_jewel']
+
+#image
+//input[@id='photo_input']
+
+#click Public
+//a[@data-sigil='touchable aaa_public']
+
+#read notifi------------------------------------------------------------------
+
+#notifi tab
+//div[@id='notifications_jewel']
+
+#notifi component
+//div[@data-sigil='notification marea']
+
+#share post------------------------------------------------------------------
+https://mobile.facebook.com/search/pages/?q=มวย
+
+#tab_page_name
+//div[@style='font-size: 17px;font-weight: 700;line-height: 20px;text-align: left;color: #050505']
+
+#share
+//a[contains(text(),'Share')]
+#share post
+//button[@id='share_submit']
+#share now
+//a[@id='share-one-click-button']
+
+//div[@data-module-result-type='profile_with_biz_tools']
+
+#! data base
+# cer = {
+#   "type": "service_account",
+#   "project_id": "testlogin-2d655",
+#   "private_key_id": "7a26d9f5c1246dee19d942875847a9e45fe83418",
+#   "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDXPUWctxzuyrYt\nsRVQvFh6k24z3wkjry0/tUlzkk8QC3U1aW6dsby6tLUDIuvbUq3qgjGZYWypTI8U\nfhlm5FwDcgQleXkqgGDP/2qQclvvKt8RdeUCS2/2id5ZkxJQhB4X5TcqW6MNL49F\n3cwes4Sqx5P5LEnSjcl1VCRAFc2ZBAktXeWU5l6HVZngmJ4mpyyCyy63wA6LBwc1\n0BKc7elBCoRT8SJmOfSr3hMACbi6TWmq44/AKjtdeY+ZdjfYK0skGU62yJLs28HL\nyL0VynWnzRLGUQ0LVD0U50ediNtTo71bLVJ0vEy+ABUoFUlMOTTBQFVB3YO2zuN7\nq6jmilCZAgMBAAECggEAGPXs9Fg7aZlWQGz+cfEPqTJe97K8KHhcjNxxDs8nLk8H\n2gh2qKC3qGbDraAPfk0jqFQOHLGSxHzhhGC9wSQHJCqlHrPsOGCwKXrfMK5kaTNd\ncFTN2KLnMm3pXFWtDGuP4llFeRrsqR8sdC+dJ+vNXTE9IKqxSnLBK8M0234zzDRY\nRRsqnz+7w8bvby2hLiHyNZXPa9bl0uX6o4EaMZkoWUMuBZeOPqwv8YXiA9kZY2aE\ngoPTttqGsq+CGYPhxcyYzmhjSwz2WfoiPCF915pTF84J8UMqP+H+bUFFRLHYzoHC\nwZiUTqv5vjgHP9MkEYCZqa3A4JHGuuwdbxtsxCch8QKBgQDxmWcdVqHLpOLLDXpB\njzru3R+s/emXqShssA/pTO0ZI/8yBessZxxJRN7n3OFfv8WDZpiyxhTptJaeXFTX\nk3pyMQ6JVKxzK2KzWg1Cx06aazZFhorIYhCQXYWRqYpxAZpx+B+7tf7h6bizfoDj\nqtZ5ujK/10vXKfVfSuJLyss3sQKBgQDkEaPNoZoEH9wTKSlOIvc6pwd+DKNmD1pz\n9IpqqRSVNBQkKWGbZYvE4qauJXceBQWz2YMnSzXvhyMO2I9dUsVQrYMxFrvsMChq\nMZ/s6Xth516DIoq4JNzPqtlTKPyo1XWQ4ZH6MAeSDkKkP1DOUHwGkP6ieG/0e75c\nC3hHXf9JaQKBgEINzPFqhCXnWNJnRuuxu00fS8/CRCFg8Fp28IK6s4BSJS2KDLhB\nIKyvlboS29OP3PKGFG2cVo9m/l8ho1ilS6741p6ZdeSvEfczQbjmQQlbEqWDmWIb\n3ad6yk/+6IjpBU7vpc1uftdJTWRVy+tzA9yYGdP1ixiyshFxqdlLArChAoGBAJsO\n9yweG8WEF68bRA7wrN++odRsKUeBVsERWG4t6GWMk8kGLWtmfcFtS1+I71SEm5zs\nXEQB2Xixiv9T8xzC4o34egKM71UkZMXWWWHMV+t3T4WenWuW/F1gTgNBEY6EGjtX\ncVUFBJCji2F5/qlWhQw91jGF6q/w1bpkvfDfkmpJAn9smA7NiH1fUS9JDct9kahX\n3AWfHErVriT9+L7qs5svHwG+HEJZ8bKHYgnSjeYYW3np0IXgw4INJyErINrNMnRt\nEr0Gt/iDinl3LaNPveuBfWQ41wwTp2G44YzH1g/eJXm5OWxyfTA0H6gX7lojLm1v\nJkH/CdaljsfbSWMPVo59\n-----END PRIVATE KEY-----\n",
+#   "client_email": "firebase-adminsdk-viy57@testlogin-2d655.iam.gserviceaccount.com",
+#   "client_id": "109909126494553820328",
+#   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+#   "token_uri": "https://oauth2.googleapis.com/token",
+#   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+#   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-viy57%40testlogin-2d655.iam.gserviceaccount.com"
+# }
+
+
+# cred = credentials.Certificate(cer)
+# app = initialize_app(cred, {
+#     'databaseURL': 'https://testlogin-2d655-default-rtdb.asia-southeast1.firebasedatabase.app/'
+# })
